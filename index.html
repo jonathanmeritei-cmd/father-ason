@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Father & Son | Electrical & Maintenance Services</title>
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --bg-card: #ffffff;
+      --accent: #f59e0b;
+      --accent-hover: #d97706;
+      --text-main: #1e293b;
+      --text-sub: #64748b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    body { background-color: #f8fafc; color: var(--text-main); line-height: 1.6; }
+
+    header { background: var(--bg-dark); padding: 1.2rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+    .logo { font-size: 1.35rem; font-weight: 800; color: #ffffff; letter-spacing: 0.5px; }
+    .logo span { color: var(--accent); }
+    nav a { color: #cbd5e1; text-decoration: none; margin-left: 1.5rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover { color: var(--accent); }
+
+    .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 5rem 5%; text-align: center; }
+    .badge { display: inline-block; background: rgba(245, 158, 11, 0.15); color: var(--accent); border: 1px solid var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.2rem; }
+    .hero h1 { font-size: 2.6rem; margin-bottom: 1rem; color: #ffffff; line-height: 1.2; }
+    .hero p { font-size: 1.15rem; color: #94a3b8; max-width: 650px; margin: 0 auto 2rem; }
+    
+    .btn-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { background: var(--accent); color: #0f172a; padding: 0.85rem 1.8rem; font-weight: 700; border-radius: 6px; text-decoration: none; transition: transform 0.2s, background 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+    .btn:hover { background: var(--accent-hover); transform: translateY(-2px); }
+    .btn-secondary { background: transparent; color: #ffffff; border: 1px solid #475569; }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+    .section { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+    .section-title { text-align: center; font-size: 2rem; color: var(--bg-dark); margin-bottom: 0.5rem; }
+    .section-sub { text-align: center; color: var(--text-sub); margin-bottom: 3rem; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    .card { background: var(--bg-card); padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); border-top: 4px solid var(--accent); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-4px); }
+    .card h3 { color: var(--bg-dark); margin-bottom: 0.8rem; font-size: 1.25rem; }
+    .card p { color: var(--text-sub); font-size: 0.95rem; }
+
+    .about-box { background: #ffffff; padding: 2.5rem; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+    .about-box h2 { color: var(--bg-dark); margin-bottom: 1rem; }
+    .about-box p { color: var(--text-sub); margin-bottom: 1rem; }
+    .stats { display: flex; gap: 2rem; margin-top: 1.5rem; }
+    .stat-item h4 { font-size: 1.8rem; color: var(--accent); }
+    .stat-item p { font-size: 0.85rem; color: var(--text-sub); margin: 0; }
+
+    .cta-box { background: var(--bg-dark); color: white; padding: 3rem; border-radius: 12px; text-align: center; }
+    .cta-box h2 { margin-bottom: 1rem; color: #fff; }
+    .cta-box p { color: #94a3b8; margin-bottom: 1.8rem; max-width: 550px; margin-left: auto; margin-right: auto; }
+
+    footer { text-align: center; padding: 2rem; background: #020617; color: #64748b; font-size: 0.9rem; margin-top: 4rem; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      nav { display: none; }
+      .about-box { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">FATHER <span>&</span> SON</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="badge">Est. 2021 | Professional Technical Services</span>
+    <h1>Dependable Electrical Solutions & Maintenance</h1>
+    <p>Expert domestic wiring, commercial installations, diagnostic power testing, equipment repairs, and emergency electrical troubleshooting.</p>
+    <div class="btn-group">
+      <a href="#contact" class="btn">Request a Quote</a>
+      <a href="tel:+254700000000" class="btn btn-secondary">Call Emergency Technician</a>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2 class="section-title">Core Electrical Capabilities</h2>
+    <p class="section-sub">Quality execution tailored for residential, commercial, and agricultural properties.</p>
+    
+    <div class="grid">
+      <div class="card">
+        <h3>Building Wiring & Power Distribution</h3>
+        <p>Complete single-phase and 3-phase wiring, distribution board (DB) installation, circuit breaker setups, and safety compliance inspections.</p>
+      </div>
+      <div class="card">
+        <h3>Equipment Repair & Heating Systems</h3>
+        <p>Thermostat diagnostics, commercial oven & heating element repairs, motor control maintenance, and precision fault tracing.</p>
+      </div>
+      <div class="card">
+        <h3>Generator & Power Integration</h3>
+        <p>Automatic transfer switch (ATS) setups, backup generator linkups, surge protection, and power system load balancing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="about-box">
+      <div>
+        <h2>Built on Experience & Craftsmanship</h2>
+        <p>Father & Son Electrical Services delivers reliable, safe, and efficient technical execution. From precise electrical installations to complex equipment troubleshooting, every job is handled with rigorous standards.</p>
+        <div class="stats">
+          <div class="stat-item">
+            <h4>5+</h4>
+            <p>Years Serving Clients</p>
+          </div>
+          <div class="stat-item">
+            <h4>100%</h4>
+            <p>Safety Focused</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="background: #f1f5f9; padding: 2rem; border-radius: 8px; border-left: 4px solid var(--accent);">
+          <h4 style="margin-bottom: 0.5rem; color: var(--bg-dark);">Need an On-Site Inspection?</h4>
+          <p style="font-size: 0.9rem; color: var(--text-sub); margin-bottom: 0;">We perform comprehensive electrical system assessments and issue transparent, itemized project estimates.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-box" id="contact">
+      <h2>Ready to Start Your Electrical Project?</h2>
+      <p>Contact Father & Son Electrical Services today to discuss technical specifications or request an immediate site inspection.</p>
+      <a href="https://wa.me/254700000000?text=Hello%20Father%20%26%20Son%20Electrical,%20I'd%20like%20to%20request%20a%20quote." target="_blank" class="btn">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Father & Son Electrical Services. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
